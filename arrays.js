@@ -78,3 +78,7 @@ console.log(num)  // display the modified with added array
 console.log(num.slice(1))  // start from index 1 and go till end
 console.log(num.slice(1,2)) // start from index 1 and go till index 3 which will not include.
 console.log(num)  // does not display modify array
+
+
+// shortcut to make array
+//  let arr = Array.from(Array(number).keys())
