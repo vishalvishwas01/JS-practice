@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: screen;
+    height: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 800px;
+    max-width: 90%;
+    height: 500px;
+    border-radius: 20px;
+    padding-block: 20px;
+    padding-inline: 10px;
+    border: 2px solid rgb(3, 134, 3);
+    background-color: rgba(17, 66, 17, 0.582);
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.box div{
+    color: rgb(1, 202, 1);
+    font-size: 20px;
+    display: none;
+}
+
+ .dots {
+        display: inline-block;
+        width: 1em;
+        text-align: center;
+        overflow: hidden;
+        animation: blinkDots 1s steps(4, end) infinite;
+    }
+
+    @keyframes blinkDots {
+        0% { content: ''; }
+        25% { content: '.'; }
+        50% { content: '..'; }
+        75% { content: '...'; }
+        100% { content: ''; }
+    }
+
+    /* For blinking effect using actual text (alternative way) */
+    .dots::after {
+        content: '...';
+        animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
