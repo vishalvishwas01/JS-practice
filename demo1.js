@@ -1,11 +1,7 @@
-let settings = { darkMode: true, fontSize: 14, notifications: false };
-// Output: { darkMode: true, notifications: false }
-
-let newobj = {}
-
-for (const key in settings){
-    if (typeof settings[key] === "boolean"){
-        newobj[key] = settings[key];
+for (i=1; i <=5; i++){
+    let stars = ""
+    for (j=1; j<=i; j++){
+        stars += j + "";
     }
+    console.log(stars) 
 }
-console.log(newobj)
