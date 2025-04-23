@@ -1,7 +1,8 @@
-for (i=1; i <=5; i++){
-    let stars = ""
-    for (j=1; j<=i; j++){
-        stars += j + "";
+const a = [4,1,6,-2,-5,3,2,-8,6,7];
+const number = (num, nfound) =>{
+    if (num%2===0 && num > 0){
+        return num
     }
-    console.log(stars) 
 }
+const result = a.some(number)
+console.log(result)
